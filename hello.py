@@ -11,7 +11,8 @@ app = Flask(__name__)
 
 app.config["MONGO_URI"] = "mongodb://localhost:27017/myDatabase"
 mongo = PyMongo(app)
-CORS(app, resources={r"/*": {"origins": "http://localhost:8080"}})
+CORS(app, resources={r"/*": {"origins": "https://your-vue-app.vercel.app"}})
+
 
 k = 5
 TYPE_MARKDOWN = 1
